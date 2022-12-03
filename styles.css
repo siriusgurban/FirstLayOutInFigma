@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    /* width: 1440px; */
+    height: 100vh;
+    background-color: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: bold;
+    margin-top: 91px;
+}
+
+h5 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    line-height: 23px;
+}
+
+.one-content {
+    font-size: 24px;
+    width: 662px;
+}
+
+.one-content p {
+    margin: 30px auto;
+}
+
+p {
+    line-height: 36px;
+}
+
+.content-text {
+    width: 150px;
+}
+
+.content-text p {
+    font-size: 18px;
+}
+
+.two-content {
+    padding-left: 95px;
+}
+
+.two {
+    display: flex;
+}
+
+.two-head {
+    display: flex;
+    margin-top: 70px;
+}
+
+.container {
+    max-width: 1051px;
+    margin: 30px auto;
+    justify-content: center;
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.section-img {
+    padding-right: 100px;
+}
+
+.director {
+    width: 315px;
+    height: 315px;
+}
+
+
+
+@media screen and (max-width: 830px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .one-content {
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    p {
+        line-height: 21px;
+    }
+
+    .section-img {
+        display: none;
+    }
+
+    .director {
+        width: 182px;
+        height: 182px;
+    }
+
+
+    .content-text p {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    h5 {
+        font-size: 15px;
+    }
+
+    .two-content {
+        padding-left: 0px;
+        padding-right: 20px;
+    }
+
+    .container {
+        max-width: 686px;
+        margin: 30px 72px;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 26px;
+    }
+
+    .one-content {
+        font-size: 12px;
+        font-weight: 400;
+    }
+
+    p {
+        line-height: 18px;
+    }
+
+    .section-img {
+        display: none;
+    }
+
+    .content-text p {
+        font-size: 10px;
+        line-height: 13px;
+    }
+
+    h5 {
+        font-size: 12px;
+    }
+
+    .two-content {
+        padding-left: 0px;
+        padding-right: 20px;
+        width: 30%;
+    }
+
+    .container {
+        max-width: 686px;
+        margin: 30px 72px;
+        
+        justify-content: center;
+    }
+
+    .one{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .one-content{
+        padding-right: 72px;
+    }
+}
