@@ -8,10 +8,23 @@
 
 
 main {
-    /* width: 1440px; */
+    width: 1440px;
+    padding: auto 126px;
     height: 100vh;
     background-color: #FFF;
     font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    max-width: 1051px;
+    margin: 30px auto;
+    justify-content: center;
+}
+
+.one {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 h1 {
@@ -58,20 +71,11 @@ p {
 
 .two-head {
     display: flex;
+    flex-wrap: nowrap;
     margin-top: 70px;
 }
 
-.container {
-    max-width: 1051px;
-    margin: 30px auto;
-    justify-content: center;
-}
 
-.one {
-    display: flex;
-    justify-content: space-between;
-
-}
 
 .section-img {
     padding-right: 100px;
@@ -84,7 +88,12 @@ p {
 
 
 
-@media screen and (max-width: 830px) {
+@media (max-width: 830px) {
+
+    main{
+        width: 837px;
+    }
+
     h1 {
         font-size: 32px;
     }
@@ -92,6 +101,7 @@ p {
     .one-content {
         font-size: 14px;
         font-weight: 400;
+        width: 384px;
     }
 
     p {
@@ -123,16 +133,21 @@ p {
     }
 
     .container {
-        max-width: 686px;
+        width: 690px;
         margin: 30px 72px;
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 
-@media screen and (max-width: 375px) {
+
+
+
+
+@media (max-width: 375px) {
+
     h1 {
         font-size: 26px;
-    }
+    } 
 
     .one-content {
         font-size: 12px;
@@ -159,22 +174,35 @@ p {
     .two-content {
         padding-left: 0px;
         padding-right: 20px;
-        width: 30%;
+        /* width: 30%; */
     }
 
     .container {
-        max-width: 686px;
-        margin: 30px 72px;
-        
-        justify-content: center;
+        width: 303px;
+        /* margin: 30px 36px; */
+        /* justify-content: center; */
     }
 
     .one{
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .one-content{
-        padding-right: 72px;
+        /* padding-right: 72px; */
     }
+
+    .director{
+        margin: auto;
+    }
+
+    main {
+        width: 376px;
+    }
+    
+    .two-head{
+        /* display: flex; */
+        flex-wrap: wrap;
+    }
+
 }
